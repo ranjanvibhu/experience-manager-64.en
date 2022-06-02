@@ -80,7 +80,7 @@ Whether you apply access control while restructuring content or when you do it f
 If the above fails, Sling 7 offers a Service User Mapping service, which allows to configure a bundle-to-user mapping and two corresponding API methods: ` [SlingRepository.loginService()](https://sling.apache.org/apidocs/sling7/org/apache/sling/jcr/api/SlingRepository.html#loginService-java.lang.String-java.lang.String-)` and ` [ResourceResolverFactory.getServiceResourceResolver()](https://sling.apache.org/apidocs/sling7/org/apache/sling/api/resource/ResourceResolverFactory.html#getServiceResourceResolver-java.util.Map-)` which return a session/resource resolver with the privileges of a configured user only. These methods have the following characteristics:
 
 * They allow mapping services to users  
-* They make it possinle to define sub-service users
+* They make it possible to define sub-service users
 * The central configuration point is: `org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl`
 * `service-id` = `service-name` [ “:” subservice-name ]
 
